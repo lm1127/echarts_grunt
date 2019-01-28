@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>数据统计</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+	<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telphone=no, email=no, address=no" >
+    <link rel="stylesheet" type="" href="/static/css/statistics.css">
+</head>
+<body>
+    <div id='wrap'>
+        <section>
+            <!-- tab header -->
+            <div class='tab_header'>
+                <span class='tab_sale active'>销售统计</span>
+                <span class='tab_user'>用户统计</span>
+            </div>
+            <!-- tab content -->
+            <div class='tab_content'>
+                <div class='sale_statistics'>
+                    <div class="tab_title"><span class="num actived">人数</span><span class="order">订单</span><span class="money">金额</span></div>
+                    <div id='sale_echarts' style='width:90%; height: 2.8rem;margin-left:5%'></div>
+                </div>
+                <div class='user_statistics'>
+                    <div class="tab_title">
+                        <span class="order_transformation actived">订单转化</span>
+                        <span class="new_old_users" style="z-index: 10;">新老用户</span>
+                    </div>
+                    <div class="ring">
+                        <div id="order_ring_one"></div>
+                        <div id="order_ring_two"></div>
+                    </div>
+                    <div class="users" style="width: 100%;">
+                        <div id="users" style='width: 3.2rem; height: 2.8rem;margin-left:5%;margin-top: -5%;'></div>
+                    </div>
+                </div>
+                <!-- 表格 -->
+                <table class='table_wrap' >
+                    <thead>
+                    </thead>
+                <table>
+            </div>
+        </section>
+    </div>
+    <script src='/static/js/jquery-3.3.1.min.js'></script>
+    <script src="/static/js/echarts.common.min.js"></script>
+    <script type="text/javascript" src='/static/js/script.js'></script>
+    <script type="text/javascript" src='/static/js/request.js'></script>
+    <script type="text/javascript" src='/static/js/money.js'></script>
+    <script type="text/javascript" src='/static/js/setNewOldUser.js'></script>
+    <script type="text/javascript" src='/static/js/setRadius.js'></script>
+    <script type="text/javascript" src='/static/js/order.js'></script>
+    <script type="text/javascript" src='/static/js/sale_echarts.js'></script>
+    <script type="text/javascript" src='/static/js/num.js'></script>
+</body>
+</html>
